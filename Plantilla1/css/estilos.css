@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1050vh;
+}
+
+header{
+    background: url("../img/blood-pressure-monitor-350930_1280.jpg") no-repeat;
+    background-size: cover;
+    height: 370px;
+}
+
+header menu{
+    background: #8181F7;
+    width: 210vh;
+    text-align: right;
+    padding: 14px;
+    position: fixed;
+    z-index: 999999;
+}
+
+header menu ul li{
+    display: inline-block;
+    padding: 0px 10px;
+    margin-right: 50px;
+    font-size: 22px;
+    margin-top: 6px;
+}
+
+header menu a{
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header h1{
+    color: aliceblue;
+    margin-top: 95px;
+    margin-bottom: -60px;
+    font-size: 50px;
+}
+
+header p{
+    color: aliceblue;
+    margin-top: 10%;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+header input[type="button"]{
+    border-radius: 20px;
+    border: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/*------------------------------------------------------------------------*/
+
+#section2{
+    background: #EFEFFB;
+}
+
+#section2 img{
+    border-radius: 100%;
+}
+
+#section2 p{
+    font-size: 26px;
+    width: 66%;
+}
+
+/*--------------------------------------------------------*/
+
+#section3 ul li{
+    display: inline-block;
+    padding: 0px 25px;
+}
+
+#section3 button{
+    transition: .4s;
+    padding: 16px;
+    border-radius: 30px; 
+    border: 0px; 
+    cursor: pointer; 
+    background: #F2F2F2;
+}
+
+#section3 button:hover{
+    -webkit-box-shadow: 11px 14px 17px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 11px 14px 17px -7px rgba(0,0,0,0.75);
+box-shadow: 11px 14px 17px -7px rgba(0,0,0,0.75);
+transition: .5;
+}
+
+#section3 input[type="button"]{
+    background: #A9A9F5;
+    padding: 15px;
+    border-radius: 3px;
+    border: 0;
+    color: #F2F2F2;
+    cursor: pointer;
+    transition: .4s;
+    margin-bottom: 50px;
+}
+
+#section3 input[type="button"]:hover{
+    background: #2E2EFE;
+    transition: .4s;
+}
+/*---------------------------------------------------------*/
+
+.modal button{
+    float: right;
+    background: #81DAF5;
+    padding: 8px;
+    border-radius: 15px;
+    border: 0;
+    transition: .3s;
+}
+
+.modal button:hover{
+    background: #0404B4;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.modal fieldset{
+    background: white;
+    width: 40%;
+    position: absolute;
+    margin: 0px;
+    margin-left: 30%;
+    margin-top: -10%;
+    padding: 40px;
+    border-radius: 10px;
+    z-index: 99999;
+}
+
+.modal p{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+/*---------------------------------------------------*/
+
+#section4{
+    background: #EFEFFB;
+}
+
+#section4 h1{
+    margin-top: -20px;
+}
+
+#section4 ul li{
+    display: inline-block;
+    padding: 0px 22px;
+    margin-bottom: 50px;
+}
+
+#section4 p{
+    width: 270px;
+    font-size: 22px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*-----------------------------------------------------------------*/
+
+footer{
+    background: black;
+    padding: 70px;
+}
+
+footer h1{
+    color: #F2F2F2;
+}

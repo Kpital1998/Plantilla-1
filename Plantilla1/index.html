@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Index</title>
+</head>
+<script src="js/vue.js"></script>
+<body>
+    <div class="container">
+        <header>
+            <menu>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#section2">Item 2</a></li>
+                    <li><a href="#section3">Item 3</a></li>
+                    <li><a href="#section4">Item 4</a></li>
+                </ul>
+            </menu>
+            <center>
+            <br><br>
+            <h1>{{titulo}}</h1>
+            <p>{{mensaje}}</p>
+            <br><br>
+            <input type="button" value="1" v-on:click="capa1()">
+            <input type="button" value="2" v-on:click="capa2()">
+            <input type="button" value="3" v-on:click="capa3()">
+            </center>
+        </header>
+        <section id="section2">
+            <center>
+                <br><br><br><br><br>
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+                <br><br><br>
+                <img src="img/microscope.jpg" alt="" width="250" height="250">
+                <br><br><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus sodales lorem vitae efficitur. Sed dictum ut enim eu ultrices. Phasellus eu mi nisl. Quisque sit amet felis tincidunt, commodo est ac, aliquam dui. Vivamus quis consectetur lorem. Aenean fringilla sem vitae massa convallis pharetra.</p>
+            </center>
+        </section>
+        <section id="section3">
+            <center>
+                <br><br><br><br><br> 
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+                <br><br><br><br>
+                <button style="float: left; margin-left: 30px;" v-on:click="contDisminuir()"><img src="img/return.png" alt=""></button>
+                <button style="float: right; margin-right: 30px;" v-on:click="contAumento()"><img src="img/next.png" alt=""></button>
+                <div class="modal">
+                    <fieldset  v-show="imagen!=''" class="animated fadeInDown">
+                        <button v-on:click="imagen=''">X</button>
+                        <center>
+                            <img v-bind:src="'img/'+ imagen" alt="" width="200" height="230">
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nisl blandit, consequat nibh sit amet, gravida justo.</p>
+                        </center>
+                </fieldset>
+            </div>
+                <ul>
+                    <li v-if="cont==0">
+                        <img src="img/koli-bacteria.jpg" alt="" width="200" height="200">
+                        <br><br>
+                        <input type="button" value="MAS DETALLES" @click="imagen='koli-bacteria.jpg'">
+                    </li>
+                    <li v-if="cont<=1">
+                        <img src="img/bacteria.jpg" alt="" width="200" height="200">
+                        <br><br>
+                        <input type="button" value="MAS DETALLES" @click="imagen='bacteria.jpg'" >
+                    </li>
+                    <li v-if="cont>=0 && cont<=2">
+                        <img src="img/tick.jpg" alt="" width="200" height="200">
+                        <br><br>
+                        <input type="button" value="MAS DETALLES" @click="imagen='tick.jpg'">
+                    </li>
+                    <li v-if="cont>=1 && cont<=3">
+                        <img src="img/bacteria2.jpg" alt="" width="200" height="200">
+                        <br><br>
+                        <input type="button" value="MAS DETALLES" @click="imagen='bacteria2.jpg'">
+                    </li>
+                    <li v-if="cont>=2 && cont<=3">
+                        <img src="img/covid.jpg" alt="" width="200" height="200">
+                        <br><br>
+                        <input type="button" value="MAS DETALLES" @click="imagen='covid.jpg'">
+                    </li>
+                    <li v-if="cont>=3">
+                        <img src="img/bacteria3.jpg" alt="" width="200" height="200">
+                        <br><br>
+                        <input type="button" value="MAS DETALLES" @click="imagen='bacteria3.jpg'">
+                    </li>
+                </ul>
+            </center>
+        </section>
+        <section id="section4">
+            <br><br><br><br><br> 
+            <center>
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+            
+                <br><br>
+                <ul>
+                    <li>
+                        <img src="img/img1.jpg" alt="" width="300" height="300">
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus sodales lorem vitae efficitur. Sed dictum ut enim eu ultrices. Phasellus eu mi nisl. Quisque sit amet felis tincidunt, commodo est ac, aliquam dui. Vivamus quis consectetur lorem. Aenean fringilla sem vitae massa convallis pharetra.</p>
+                    </li>
+                </ul>
+            </center>
+        </section>
+        <footer>
+            <center>
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+            </center>
+        </footer>
+    </div>
+    <script src="js/efectos.js"></script>
+</body>
+</html>
